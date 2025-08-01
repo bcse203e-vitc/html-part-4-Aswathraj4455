@@ -1,0 +1,74 @@
+body {
+  background: #f6f6f8;
+  font-family: Arial, sans-serif;
+}
+
+.button-row {
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+  align-items: center;
+  height: 320px;
+}
+
+.btn {
+  min-width: 170px;
+  padding: 22px 0;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  color: #fff;
+  background: #4caf50;
+  cursor: pointer;
+  box-shadow: 0 4px 18px rgba(86,110,120,0.06);
+  transition: 
+    background 0.18s,
+    transform 0.18s,
+    box-shadow 0.16s;
+  outline: none;
+  font-weight: 500;
+}
+
+.btn.save {
+  background: #19724a;
+}
+.btn.cancel {
+  background: #65110d;
+}
+.btn.submit {
+  background: #0d3956;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background: #196942;
+  transform: scale(1.05);
+}
+
+.btn.save:hover,
+.btn.save:focus-visible {
+  background: #1a5a3e;
+}
+.btn.cancel:hover,
+.btn.cancel:focus-visible {
+  background: #7c1c19;
+}
+.btn.submit:hover,
+.btn.submit:focus-visible {
+  background: #2670a9;
+}
+
+.btn:active {
+  box-shadow: 0 0 0 6px rgba(56,150,211,0.14);
+  transform: scale(0.97);
+}
+
+.btn.save:active {
+  box-shadow: 0 0 0 6px rgba(65,184,131,0.13);
+}
+.btn.cancel:active {
+  box-shadow: 0 0 0 6px rgba(208,68,61,0.12);
+}
+.btn.submit:active {
+  box-shadow: 0 0 0 6px rgba(56,150,211,0.13);
+}
